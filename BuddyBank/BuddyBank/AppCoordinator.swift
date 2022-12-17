@@ -17,7 +17,16 @@ class AppCoordinator: Coordinator {
   }
 
   func startApp() {
-    
+    let viewModel = PokemonListVM(coordinator: self)
+    let firstViewController = PokemonListVC()
+    firstViewController.config(with: viewModel)
+    navigationController.pushViewController(firstViewController, animated: true)
+  }
+  
+  func pokemonDetail(_ pokemon: Pokemon) {
+    let controller = PokemonDetailVC()
+    controller.config(pokemon: pokemon)
+    navigationController.pushViewController(controller, animated: true)
   }
   
 }
