@@ -8,37 +8,35 @@
 import UIKit
 
 class PokemonDetailVC: UITableViewController {
+  private let cellIdentifier = "detailCell"
+  private var viewModel: PokemonDetailVM?
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
   }
   
-  func config(pokemon: Pokemon) {
-    self.title = pokemon.name
+  func config(viewModel: PokemonDetailVM) {
+    self.viewModel = viewModel
+    self.title = viewModel.title
   }
   
   // MARK: - Table view data source
   
-  override func numberOfSections(in tableView: UITableView) -> Int {
-    // #warning Incomplete implementation, return the number of sections
-    return 0
-  }
-  
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    // #warning Incomplete implementation, return the number of rows
-    return 0
+    viewModel?.rows ?? 0
   }
   
-  /*
-   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-   let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-   
-   // Configure the cell...
-   
-   return cell
-   }
-   */
+  override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: self.cellIdentifier, for: indexPath)
+    cell.textLabel?.numberOfLines = 0
+    cell.textLabel?.text = viewModel?.getInfo(at: indexPath.row).value
+    return cell
+  }
+  
+  override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    UITableView.automaticDimension
+  }
   
   /*
    // Override to support conditional editing of the table view.

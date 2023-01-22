@@ -10,7 +10,7 @@ import UIKit
 class PokemonMainCell: UICollectionViewCell {
   let backview: UIView = {
     let view = UIView()
-    view.layer.borderColor = UIColor.blue.cgColor
+    view.layer.borderColor = UIColor.gray.cgColor
     view.layer.borderWidth = 1.0
     view.layer.cornerRadius = 8.0
     view.layer.masksToBounds = true
@@ -20,7 +20,7 @@ class PokemonMainCell: UICollectionViewCell {
   
   let name: UILabel = {
     let label = UILabel()
-    label.textColor = .red
+    label.textColor = .white
     label.translatesAutoresizingMaskIntoConstraints = false
     return label
   }()
@@ -41,11 +41,10 @@ class PokemonMainCell: UICollectionViewCell {
   }
   
   func config(pokemon: Pokemon) {
-    print(pokemon.name)
     name.text = pokemon.name
     name.sizeToFit()
     name.textAlignment = .center
-    name.backgroundColor = .blue
+    name.backgroundColor = .black
     if let pokestring = (pokemon.sprites?.other?.official?.front), let url = URL(string: pokestring) {
       avatar.load(url: url)
     }

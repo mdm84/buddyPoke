@@ -8,9 +8,10 @@
 import UIKit
 
 protocol Coordinator {
-    var parentCoordinator: Coordinator? { get set }
-    var children: [Coordinator] { get set }
-    var navigationController : UINavigationController { get set }
-    
-    func startApp()
+  var parentCoordinator: Coordinator? { get set }
+  var children: [Coordinator] { get set }
+  var navigationController : UINavigationController { get set }
+  
+  func startApp()
+  func pokemonDetail(_ pokemon: Pokemon)
 }

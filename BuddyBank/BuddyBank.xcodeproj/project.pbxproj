@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3320F14B297DACDC0090C0F3 /* BuddyBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3320F14A297DACDC0090C0F3 /* BuddyBankTests.swift */; };
+		3320F152297DAD250090C0F3 /* AppCoordinatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3320F151297DAD250090C0F3 /* AppCoordinatorMock.swift */; };
 		33A5FFB6294E23CC0027ED59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A5FFB5294E23CC0027ED59 /* AppDelegate.swift */; };
 		33A5FFBA294E23CC0027ED59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A5FFB9294E23CC0027ED59 /* ViewController.swift */; };
 		33A5FFBD294E23CC0027ED59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A5FFBB294E23CC0027ED59 /* Main.storyboard */; };
@@ -35,7 +37,20 @@
 		33A5FFFD294E50BF0027ED59 /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A5FFFC294E50BF0027ED59 /* PokemonDetailVC.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3320F14C297DACDC0090C0F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33A5FFAA294E23CC0027ED59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33A5FFB1294E23CC0027ED59;
+			remoteInfo = BuddyBank;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		3320F148297DACDC0090C0F3 /* BuddyBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuddyBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3320F14A297DACDC0090C0F3 /* BuddyBankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuddyBankTests.swift; sourceTree = "<group>"; };
+		3320F151297DAD250090C0F3 /* AppCoordinatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorMock.swift; sourceTree = "<group>"; };
 		33A5FFB2294E23CC0027ED59 /* BuddyBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuddyBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33A5FFB5294E23CC0027ED59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33A5FFB9294E23CC0027ED59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +82,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3320F145297DACDC0090C0F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		33A5FFAF294E23CC0027ED59 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -77,10 +99,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3320F149297DACDC0090C0F3 /* BuddyBankTests */ = {
+			isa = PBXGroup;
+			children = (
+				3320F14A297DACDC0090C0F3 /* BuddyBankTests.swift */,
+				3320F151297DAD250090C0F3 /* AppCoordinatorMock.swift */,
+			);
+			path = BuddyBankTests;
+			sourceTree = "<group>";
+		};
 		33A5FFA9294E23CC0027ED59 = {
 			isa = PBXGroup;
 			children = (
 				33A5FFB4294E23CC0027ED59 /* BuddyBank */,
+				3320F149297DACDC0090C0F3 /* BuddyBankTests */,
 				33A5FFB3294E23CC0027ED59 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				33A5FFB2294E23CC0027ED59 /* BuddyBank.app */,
+				3320F148297DACDC0090C0F3 /* BuddyBankTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -210,6 +243,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3320F147297DACDC0090C0F3 /* BuddyBankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3320F150297DACDC0090C0F3 /* Build configuration list for PBXNativeTarget "BuddyBankTests" */;
+			buildPhases = (
+				3320F144297DACDC0090C0F3 /* Sources */,
+				3320F145297DACDC0090C0F3 /* Frameworks */,
+				3320F146297DACDC0090C0F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3320F14D297DACDC0090C0F3 /* PBXTargetDependency */,
+			);
+			name = BuddyBankTests;
+			productName = BuddyBankTests;
+			productReference = 3320F148297DACDC0090C0F3 /* BuddyBankTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		33A5FFB1294E23CC0027ED59 /* BuddyBank */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33A5FFC6294E23CD0027ED59 /* Build configuration list for PBXNativeTarget "BuddyBank" */;
@@ -237,6 +288,10 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					3320F147297DACDC0090C0F3 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 33A5FFB1294E23CC0027ED59;
+					};
 					33A5FFB1294E23CC0027ED59 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
@@ -256,11 +311,19 @@
 			projectRoot = "";
 			targets = (
 				33A5FFB1294E23CC0027ED59 /* BuddyBank */,
+				3320F147297DACDC0090C0F3 /* BuddyBankTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3320F146297DACDC0090C0F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		33A5FFB0294E23CC0027ED59 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -274,6 +337,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3320F144297DACDC0090C0F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3320F152297DAD250090C0F3 /* AppCoordinatorMock.swift in Sources */,
+				3320F14B297DACDC0090C0F3 /* BuddyBankTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		33A5FFAE294E23CC0027ED59 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -306,6 +378,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		3320F14D297DACDC0090C0F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33A5FFB1294E23CC0027ED59 /* BuddyBank */;
+			targetProxy = 3320F14C297DACDC0090C0F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		33A5FFBB294E23CC0027ED59 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -326,6 +406,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3320F14E297DACDC0090C0F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DG244SPW92;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.dimella.BuddyBankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BuddyBank.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BuddyBank";
+			};
+			name = Debug;
+		};
+		3320F14F297DACDC0090C0F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DG244SPW92;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.dimella.BuddyBankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BuddyBank.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BuddyBank";
+			};
+			name = Release;
+		};
 		33A5FFC4294E23CD0027ED59 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -501,6 +617,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3320F150297DACDC0090C0F3 /* Build configuration list for PBXNativeTarget "BuddyBankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3320F14E297DACDC0090C0F3 /* Debug */,
+				3320F14F297DACDC0090C0F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		33A5FFAD294E23CC0027ED59 /* Build configuration list for PBXProject "BuddyBank" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

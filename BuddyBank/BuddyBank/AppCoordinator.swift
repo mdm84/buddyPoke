@@ -25,7 +25,9 @@ class AppCoordinator: Coordinator {
   
   func pokemonDetail(_ pokemon: Pokemon) {
     let controller = PokemonDetailVC()
-    controller.config(pokemon: pokemon)
+    let vm = PokemonDetailVM(coordinator: self)
+    vm.assign(pokemon)
+    controller.config(viewModel: vm)
     navigationController.pushViewController(controller, animated: true)
   }
   
